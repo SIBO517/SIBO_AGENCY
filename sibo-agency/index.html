@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIBO Agency | Premium Sales & Marketing Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a1930;
+            --primary-light: #1a2a4a;
+            --secondary: #d4af37;
+            --secondary-light: #e6c76d;
+            --dark: #050a15;
+            --light: #f8f9fc;
+            --gray: #a3aec9;
+            --light-gray: #2a3b5f;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--light);
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body:before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 20%);
+            z-index: -1;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--secondary);
+            color: var(--primary);
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid var(--secondary);
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: rgba(10, 25, 48, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .nav-links li:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .nav-links li:hover:after {
+            width: 100%;
+        }
+        
+        .nav-links li.active:after {
+            width: 100%;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--light);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .nav-links a.active {
+            color: var(--secondary);
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(10, 25, 48, 0.9) 0%, rgba(5, 10, 21, 0.9) 100%), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .hero h1:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--secondary);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 40px auto 50px;
+            opacity: 0.9;
+            color: var(--gray);
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+        }
+
+        .about-img:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid var(--secondary);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text h2 {
+            font-size: 2.8rem;
+            color: var(--secondary);
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-text h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--primary-light);
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .stat-item .number {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Services Section */
+        .services {
+            background: linear-gradient(to bottom, var(--primary) 0%, var(--dark) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--secondary);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+        .service-card {
+            background: var(--primary-light);
+            padding: 45px 35px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--secondary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .service-card:hover:before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 90px;
+            height: 90px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            border: 2px solid var(--secondary);
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--secondary);
+        }
+
+        .service-card:hover .service-icon i {
+            color: var(--primary);
+        }
+
+        .service-icon i {
+            font-size: 36px;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--dark);
+            position: relative;
+        }
+
+        .testimonials:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--secondary);
+        }
+
+        .testimonials-container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: var(--primary-light);
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+            position: relative;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .testimonial:before {
+            content: """;
+            font-size: 120px;
+            position: absolute;
+            top: -40px;
+            left: 20px;
+            color: rgba(212, 175, 55, 0.1);
+            font-family: Georgia, serif;
+            z-index: 1;
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            color: var(--light);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .client {
+            display: flex;
+            align-items: center;
+        }
+
+        .client img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            border: 3px solid var(--secondary);
+        }
+
+        .client-info h4 {
+            margin-bottom: 5px;
+        }
+
+        .client-info p {
+            color: var(--secondary-light);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(to right, var(--primary), var(--primary-light));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--secondary);
+        }
+
+        .contact .section-title h2 {
+            color: var(--secondary);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--secondary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-info h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+        }
+
+        .contact-details {
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .contact-item i {
+            font-size: 26px;
+            margin-right: 20px;
+            color: var(--secondary);
+            min-width: 30px;
+            margin-top: 5px;
+        }
+
+        .contact-item div h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-item div p {
+            color: var(--gray);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--secondary);
+            border-radius: 50%;
+            transition: var(--transition);
+            font-size: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .social-links a:hover {
+            background: var(--secondary);
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        /* Form Styling */
+        .contact-form .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--secondary-light);
+            font-weight: 500;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            color: var(--light);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+
+        .contact-form textarea {
+            height: 160px;
+            resize: vertical;
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            font-size: 0.9rem;
+            margin-top: 6px;
+            display: none;
+        }
+
+        .form-group.invalid .error-message {
+            display: block;
+        }
+
+        .form-group.invalid input,
+        .form-group.invalid textarea {
+            border-color: #ff6b6b;
+        }
+
+        .success-message {
+            background: rgba(40, 167, 69, 0.15);
+            border: 1px solid rgba(40, 167, 69, 0.3);
+            color: #28a745;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            padding: 80px 0 30px;
+            position: relative;
+        }
+
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--secondary);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        .footer-col p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+
+        .footer-form input {
+            width: 100%;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            color: var(--light);
+            margin-bottom: 15px;
+        }
+
+        .footer-form .btn {
+            width: 100%;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Industries Section */
+        .industries {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+            position: relative;
+        }
+
+        .industries:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--secondary);
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .industry-card {
+            background: rgba(10, 25, 48, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .industry-card:hover {
+            transform: translateY(-10px);
+            background: rgba(10, 25, 48, 0.8);
+            border-color: var(--secondary);
+        }
+
+        .industry-icon {
+            font-size: 40px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .industry-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .industry-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Value Proposition Section */
+        .values {
+            background: var(--dark);
+            position: relative;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .value-card {
+            background: var(--primary-light);
+            padding: 35px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            border-color: var(--secondary);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            border: 2px solid var(--secondary);
+            transition: var(--transition);
+        }
+
+        .value-card:hover .value-icon {
+            background: var(--secondary);
+        }
+
+        .value-card:hover .value-icon i {
+            color: var(--primary);
+        }
+
+        .value-icon i {
+            font-size: 30px;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .value-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Logo Section */
+        .logo-section {
+            padding: 80px 0;
+            background: var(--primary);
+            position: relative;
+        }
+
+        .logo-container {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .logo-display {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+            
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-img {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 0;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 0;
+                padding: 15px 30px;
+                width: 100%;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .section-title h2 {
+                font-size: 2.3rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo-img {
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .service-card,
+            .industry-card,
+            .value-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="1000320452.jpg" alt="SIBO Agency Logo" class="logo-img">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#values">Values</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Premium Sales & Marketing Solutions</h1>
+            <p>We connect businesses with highly trained sales professionals to drive growth and maximize revenue. Serving Nairobi and beyond with exceptional talent and measurable results.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn">Our Services</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="logo-section">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-display">
+                    <img src="1000320452.jpg" alt="SIBO Agency Official Logo" class="logo-img">
+                </div>
+                <h2>Your Trusted Sales Partner</h2>
+                <p>Professional sales solutions for businesses across Kenya</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="SIBO Agency Team">
+                </div>
+                <div class="about-text">
+                    <h2>About SIBO Agency</h2>
+                    <p>SIBO AGENCY is a registered sales and marketing company based in Nairobi, Kenya. We specialize in bridging the gap between businesses needing skilled sales personnel and individuals seeking sales opportunities.</p>
+                    <p>Our mission is to empower businesses with exceptional sales talent and create fulfilling sales careers, fostering growth and prosperity for all stakeholders.</p>
+                    <p>We envision becoming the leading provider of outsourced sales solutions in Kenya, recognized for our professionalism, results-driven approach, and commitment to excellence.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="number">150+</div>
+                            <p>Trained Professionals</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">98%</div>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">3+</div>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We provide highly vetted and trained sales professionals to clients on a contractual or project basis across various industries.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Shop Attendants</h3>
+                    <p>Providing trained personnel to manage retail spaces, assist customers, and drive in-store sales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Direct Sales Agents</h3>
+                    <p>Deploying agents for door-to-door sales, field sales, and direct consumer engagement initiatives.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Promoters/Brand Ambassadors</h3>
+                    <p>Supplying individuals to represent brands, conduct demos, and engage with customers at events.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Merchandisers</h3>
+                    <p>Offering personnel to optimize product placement, manage inventory, and ensure visual appeal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Telesales Agents</h3>
+                    <p>Providing trained individuals for outbound/inbound calls, lead generation, and customer service.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>Event Sales Staff</h3>
+                    <p>Supplying temporary sales personnel for trade shows, conferences, exhibitions, and special events.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>B2B Sales Representatives</h3>
+                    <p>Specialized sales personnel to target other businesses and drive corporate sales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Sales Team Management</h3>
+                    <p>Offering experienced sales leaders to oversee and motivate deployed sales teams.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Sales Training</h3>
+                    <p>Providing bespoke training programs for sales teams and client companies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Sales Analytics</h3>
+                    <p>Delivering reports on sales performance, market insights, and optimization recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="industries">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industries We Serve</h2>
+                <p>We provide tailored sales solutions to businesses across diverse sectors in Kenya.</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Retail</h3>
+                    <p>Supermarkets, fashion boutiques, electronics stores, furniture shops, and hardware stores.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>FMCG</h3>
+                    <p>Companies needing direct sales agents, merchandisers, and promoters for product launches.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Telecom</h3>
+                    <p>Requiring direct sales agents for SIM activations, mobile money services, and data packages.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Financial Services</h3>
+                    <p>Banks, microfinance, and insurance companies needing agents for account opening and sales.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Real Estate</h3>
+                    <p>Developers needing sales agents for property viewings, sales, and site visits.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Manufacturing</h3>
+                    <p>Companies seeking representatives to distribute products to wholesalers and retailers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="values" class="values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Value Proposition</h2>
+                <p>We empower your business with a high-performing, flexible, and cost-effective sales force.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Improved Sales Performance</h3>
+                    <p>Our agents undergo continuous training in modern sales techniques and customer service.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Scalability & Flexibility</h3>
+                    <p>Rapidly deploy or scale down sales teams based on demand, seasonality, or project needs.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Cost Efficiency</h3>
+                    <p>Reduce recruitment costs, HR overheads, and payroll management. Pay only for what you need.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Pre-Vetted Talent</h3>
+                    <p>Gain immediate access to trained, motivated, and results-oriented sales professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>Hear what our clients say about our services and solutions.</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "SIBO Agency transformed our retail operations. Their shop attendants are professional, knowledgeable, and have significantly increased our in-store sales. The flexibility to scale our team during peak seasons has been invaluable."
+                    </div>
+                    <div class="client">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+                        <div class="client-info">
+                            <h4>Sarah K. Mwangi</h4>
+                            <p>Retail Director, Nairobi Supermarkets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "As a growing FMCG company, we needed to expand quickly without the HR burden. SIBO provided us with a team of highly trained sales agents who hit the ground running. Their performance-based model aligns perfectly with our goals."
+                    </div>
+                    <div class="client">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        <div class="client-info">
+                            <h4>David Ochieng</h4>
+                            <p>CEO, FreshGoods Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "The sales analytics and reporting provided by SIBO Agency gave us insights we never had before. Their data-driven approach helped us optimize our sales strategy and increase revenue by 35% in just six months."
+                    </div>
+                    <div class="client">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client">
+                        <div class="client-info">
+                            <h4>Grace Wambui</h4>
+                            <p>Marketing Director, TeleConnect Kenya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch to discuss your sales staffing needs and solutions.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+254 700 123 456</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@siboagency.co.ke</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                            <div class="error-message">Please enter your name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                            <div class="error-message">Please enter a valid email</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" required>
+                            <div class="error-message">Please enter your company name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                            <div class="error-message">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <div class="success-message">Thank you! Your message has been sent successfully.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SIBO Agency</h3>
+                    <p>Connecting businesses with exceptional sales talent to drive growth and maximize revenue across Kenya.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Shop Attendants</a></li>
+                        <li><a href="#services">Direct Sales Agents</a></li>
+                        <li><a href="#services">Promoters & Brand Ambassadors</a></li>
+                        <li><a href="#services">Merchandisers</a></li>
+                        <li><a href="#services">Sales Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive industry insights and updates.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 SIBO Agency. All Rights Reserved. Registered Sales and Marketing Company in Kenya.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                navLinks.classList.remove('active');
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form Validation
+        const contactForm = document.getElementById('contactForm');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                let isValid = true;
+                
+                // Reset error states
+                const formGroups = contactForm.querySelectorAll('.form-group');
+                formGroups.forEach(group => group.classList.remove('invalid'));
+                
+                // Validate each field
+                const name = document.getElementById('name');
+                if (!name.value.trim()) {
+                    name.parentElement.classList.add('invalid');
+                    isValid = false;
+                }
+                
+                const email = document.getElementById('email');
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email.value)) {
+                    email.parentElement.classList.add('invalid');
+                    isValid = false;
+                }
+                
+                const company = document.getElementById('company');
+                if (!company.value.trim()) {
+                    company.parentElement.classList.add('invalid');
+                    isValid = false;
+                }
+                
+                const message = document.getElementById('message');
+                if (!message.value.trim()) {
+                    message.parentElement.classList.add('invalid');
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Show success message
+                    const successMessage = contactForm.querySelector('.success-message');
+                    successMessage.style.display = 'block';
+                    
+                    // Reset form after 3 seconds
+                    setTimeout(() => {
+                        contactForm.reset();
+                        successMessage.style.display = 'none';
+                    }, 3000);
+                }
+            });
+        }
+        
+        // Add active class to nav links on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
