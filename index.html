@@ -1,12 +1,9 @@
-Certainly! Here's the full HTML code with the new SVG logo implemented consistently throughout the page:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIBO Agency | Premium Sales & Marketing Solutions</title>
+    <title>SIBO Agency | Direct Sales Representative Application</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -22,12 +19,17 @@ Certainly! Here's the full HTML code with the new SVG logo implemented consisten
             --transition: all 0.3s ease;
         }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: var(--light);
             color: var(--dark);
-            margin: 0;
-            padding: 0;
+            line-height: 1.6;
         }
 
         .container {
@@ -36,10 +38,16 @@ Certainly! Here's the full HTML code with the new SVG logo implemented consisten
             padding: 0 20px;
         }
 
+        /* Header Styles */
         header {
             background-color: var(--primary);
             color: var(--light);
-            padding: 20px 0;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .navbar {
@@ -51,10 +59,11 @@ Certainly! Here's the full HTML code with the new SVG logo implemented consisten
         .logo-container {
             display: flex;
             align-items: center;
+            text-decoration: none;
         }
 
         .logo-svg {
-            height: 50px;
+            height: 45px;
             width: auto;
             display: block;
         }
@@ -63,12 +72,13 @@ Certainly! Here's the full HTML code with the new SVG logo implemented consisten
             display: none;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
-            font-size: 28px;
+            font-size: 24px;
             text-decoration: none;
+            color: var(--light);
         }
 
         .text-logo span:first-child {
-            color: var(--primary);
+            color: var(--light);
         }
 
         .text-logo span:last-child {
@@ -80,7 +90,7 @@ Certainly! Here's the full HTML code with the new SVG logo implemented consisten
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 30px;
         }
 
         .nav-links a {
@@ -88,6 +98,7 @@ Certainly! Here's the full HTML code with the new SVG logo implemented consisten
             text-decoration: none;
             font-weight: 500;
             transition: var(--transition);
+            font-size: 14px;
         }
 
         .nav-links a:hover {
@@ -96,292 +107,95 @@ Certainly! Here's the full HTML code with the new SVG logo implemented consisten
 
         .mobile-toggle {
             display: none;
-        }
-
-        @media (max-width: 768px) {
-            .mobile-toggle {
-                display: block;
-                color: var(--light);
-                font-size: 24px;
-                cursor: pointer;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                gap: 10px;
-                position: absolute;
-                top: 70px;
-                right: 20px;
-                background-color: var(--primary);
-                padding: 20px;
-                border-radius: 8px;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .logo-svg {
-                height: 40px;
-            }
-        }
-
-        .hero {
-            background-color: var(--secondary);
             color: var(--light);
-            padding: 100px 0;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--light);
+            padding: 120px 0 80px;
             text-align: center;
+            margin-top: 75px;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             max-width: 600px;
             margin: 0 auto;
+            opacity: 0.9;
         }
 
-        .logo-section {
-            padding: 60px 0;
+        /* Form Container */
+        .form-container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-container .logo {
             text-align: center;
-        }
-
-        .logo-section .logo-display {
             margin-bottom: 30px;
         }
 
-        .logo-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+        .form-container .logo-svg {
+            height: 60px;
+            margin-bottom: 10px;
         }
 
-        .logo-section p {
-            font-size: 1.25rem;
+        .form-container h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .form-container > p {
+            text-align: center;
             color: var(--gray);
+            margin-bottom: 30px;
         }
 
-        .svg-fallback .logo-svg {
-            display: none;
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 25px;
         }
 
-        .svg-fallback .text-logo {
-            display: flex;
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--primary);
         }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo-container">
-                    <svg class="logo-svg" width="250" height="70" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="10" y="10" width="10" height="20" fill="#d4af37"/>
-                        <rect x="30" y="10" width="10" height="20" fill="#d4af37"/>
-                        <rect x="50" y="10" width="10" height="20" fill="#d4af37"/>
-                        <rect x="10" y="40" width="10" height="10" fill="#d4af37"/>
-                        <rect x="30" y="40" width="10" height="10" fill="#d4af37"/>
-                        <text x="80" y="38" font-family="Montserrat" font-weight="800" font-size="32" fill="#0a1930">SIBO</text>
-                        <text x="150" y="38" font-family="Montserrat" font-weight="600" font-size="32" fill="#d4af37">AGENCY</text>
-                    </svg>
-                    <span class="text-logo">
-                        <span>SIBO</span>
-                        <span>AGENCY</span>
-                    </span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#industries">Industries</a></li>
-                    <li><a href="#values">Values</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Join Our Team at SIBO AGENCY</h1>
-            <p>We're looking for passionate Direct Sales Representatives to help grow our network and deliver exceptional service to our agents.</p>
-        </div>
-    </section>
+        label i {
+            margin-right: 8px;
+            color: var(--secondary);
+        }
 
-    <section class="logo-section">
-        <div class="container">
-            <div class="logo-container">
-                <div class="logo-display">
-                    <svg class="logo-svg" width="300" height="90" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="10" y="10" width="10" height="20" fill="#d4af37"/>
-                        <rect x="30" y="10" width="10" height="20" fill="#d4af37"/>
-                        <rect x="50" y="10" width="10" height="20" fill="#d4af37"/>
-                        <rect x="10" y="40" width="10" height="10" fill="#d4af37"/>
-                        <rect x="30" y="40" width="10" height="10" fill="#d4af37"/>
-                        <text x="80" y="38" font-family="Montserrat" font-weight="800" font-size="32" fill="#0a1930">SIBO</text>
-                        <text x="150" y="38" font-family="Montserrat" font-weight="600" font-size="32" fill="#d4af37">AGENCY</text>
-                    </svg>
-                </div>
-                <h2>Your Trusted Sales Partner</h2>
-                <p>Professional sales solutions for businesses across Kenya</p>
-            </div>
-        </div>
-    </section>
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: var(--transition);
+        }
 
-    <div class="form-container">
-        <div class="logo">
-            <svg class="logo-svg" width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" y="10" width="10" height="20" fill="#d4af37"/>
-                <rect x="30" y="10" width="10" height="20" fill="#d4af37"/>
-                <rect x="50" y="10" width="10" height="20" fill="#d4af37"/>
-                <rect x="10" y="40" width="10" height="10" fill="#d4af37"/>
-                <rect x="30" y="40" width="10" height="10" fill="#d4af37"/>
-                <text x="80" y="38" font-family="Montserrat" font-weight="800" font-size="32" fill="#0a1930">SIBO</text>
-                <text x="150" y="38" font-family="Montserrat" font-weight="600" font-size="32" fill="#d4af37">AGENCY</text>
-            </svg>
-            <span class="text-logo">
-                <span>SIBO</span>
-                <span>AGENCY</span>
-            </span>
-        </div>
-        <h1>Register with SIBO AGENCY</h1>
-        <p style="text-align: center; margin-bottom: 30px;">Fill out the form below to apply for this exciting opportunity</p>
-        
-        <form id="registration-form" action="https://formsubmit.co/sbmsalesmarketingco@gmail.com" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="_subject" value="New Job Application - Direct Sales Representative">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="#success-message">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <div class="form-group">
-                <label for="full-name"><i class="fas fa-user"></i> Full Name</label>
-                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
-                <span class="error" id="full-name-error">Please enter your full name.</span>
-            </div>
-            
-            <div class="form-group">
-                <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                <span class="error" id="email-error">Please enter a valid email address.</span>
-            </div>
-            
-            <div class="form-group">
-                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,12}" placeholder="Enter your phone number" required>
-                <span class="error" id="phone-error">Please enter a valid phone number (10-12 digits).</span>
-            </div>
-            
-            <div class="form-group">
-                <label for="cv"><i class="fas fa-file-upload"></i> Upload CV (PDF or DOC)</label>
-                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-                <span class="error" id="cv-error">Please upload a PDF or DOC file.</span>
-            </div>
-            
-            <button type="submit">
-                <i class="fas fa-paper-plane"></i> Submit Application
-            </button>
-        </form>
-        
-        <div class="success-message" id="success-message">
-            <i class="fas fa-check-circle" style="font-size: 2.5rem; margin-bottom: 15px;"></i>
-            <h3>Thank you for your application!</h3>
-            <p>We've received your registration with SIBO AGENCY. Our team will review your application and get back to you soon.</p>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Check if SVG is supported
-            if (!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {
-                document.body.classList.add('svg-fallback');
-            }
-            
-            // Check if SVG actually rendered
-            const svg = document.querySelector('.logo-svg');
-            if (svg.getBoundingClientRect().width === 0) {
-                document.body.classList.add('svg-fallback');
-            }
-        });
-
-        document.getElementById('registration-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            let isValid = true;
-
-            // Reset error messages
-            document.querySelectorAll('.error').forEach(error => error.style.display = 'none');
-
-            // Full Name validation
-            const fullName = document.getElementById('full-name').value;
-            if (!fullName.trim()) {
-                document.getElementById('full-name-error').style.display = 'block';
-                isValid = false;
-            }
-
-            // Email validation
-            const email = document.getElementById('email').value;
-            if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-                document.getElementById('email-error').style.display = 'block';
-                isValid = false;
-            }
-
-            // Phone validation
-            const phone = document.getElementById('phone').value;
-            if (!phone.match(/^[0-9]{10,12}$/)) {
-                document.getElementById('phone-error').style.display = 'block';
-                isValid = false;
-            }
-
-            // CV validation
-            const cv = document.getElementById('cv').files[0];
-            if (!cv || !['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(cv.type)) {
-                document.getElementById('cv-error').style.display = 'block';
-                isValid = false;
-            }
-
-            if (isValid) {
-                document.getElementById('registration-form').style.display = 'none';
-                document.getElementById('success-message').style.display = 'block';
-                
-                // Submit form to FormSubmit
-                this.submit();
-                
-                // Scroll to success message
-                document.getElementById('success-message').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    </script>
-</body>
-</html>
-```
-
-### Explanation:
-
-1. **Header Section:**
-   - The logo is implemented in the header navigation bar.
-
-2. **Hero Section:**
-   - The hero section contains a call to action and uses the same styling as the rest of the page.
-
-3. **Logo Section:**
-   - A dedicated section to display the logo prominently.
-
-4. **Form Container:**
-   - The logo is also included at the top of the form container for brand consistency.
-
-5. **Responsive Design:**
-   - The logo adjusts its size based on the viewport width using media queries.
-   - A mobile toggle is included for the navigation links on smaller screens.
-
-6. **Fallback System:**
-   - If SVG is not supported or fails to load, a text-based logo will be displayed instead.
-
-7. **JavaScript:**
-   - The script checks for SVG support and applies a fallback class if necessary.
-   - Form validation ensures that all required fields are correctly filled before submission.
+        input[type="text"]:focus,
